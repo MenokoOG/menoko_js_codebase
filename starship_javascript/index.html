@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starship Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Starship Simulator</h1>
+
+    <!-- Input section for starship name -->
+    <div class="input-section">
+      <label for="shipName">Starship Name:</label>
+      <input type="text" id="shipName" placeholder="Enter starship name">
+      <button id="createShipBtn">Create Starship</button>
+    </div>
+
+    <!-- Input section for crew members -->
+    <div class="input-section">
+      <label for="crewName">Crew Member Name:</label>
+      <input type="text" id="crewName" placeholder="Enter crew member name">
+      <label for="crewRole">Crew Member Role:</label>
+      <input type="text" id="crewRole" placeholder="Enter crew member role">
+      <button id="addCrewBtn">Add Crew Member</button>
+    </div>
+
+    <!-- Input section for supplies -->
+    <div class="input-section">
+      <label for="supplyName">Supply Name:</label>
+      <input type="text" id="supplyName" placeholder="Enter supply name">
+      <label for="supplyQuantity">Supply Quantity:</label>
+      <input type="number" id="supplyQuantity" placeholder="Enter supply quantity">
+      <button id="addSupplyBtn">Add Supply</button>
+    </div>
+
+    <!-- Input section for shuttles -->
+    <div class="input-section">
+      <label for="shuttleName">Shuttle Name:</label>
+      <input type="text" id="shuttleName" placeholder="Enter shuttle name">
+      <button id="addShuttleBtn">Add Shuttle</button>
+    </div>
+
+    <!-- Display starship information here -->
+    <div id="shipInfo" class="ship-info"></div>
+
+    <!-- Button section for actions -->
+    <div class="button-section">
+      <button id="showSuppliesBtn">Show Supplies</button>
+      <button id="showCrewBtn">Show Crew</button>
+      <button id="showShuttlesBtn">Show Shuttles</button>
+      <button id="startMissionBtn">Start Mission</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
